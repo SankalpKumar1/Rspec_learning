@@ -28,7 +28,7 @@ RSpec.describe 'Status Requests' do
         it 'returns all of the consoles that is specified with the manufacturer' do
             get('/consoles_with_manufacturer/microsoft') 
             json = JSON.parse(response.body)
-            expect( json['consoles'] ).to contain_exactly('xbox')
+            expect( json['consoles'] ).to contain_exactly('ps5','ps2')
         end
     end
 end
