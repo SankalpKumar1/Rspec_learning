@@ -1,4 +1,7 @@
 class Animal
+    begin  
+        this is the comment that i have added
+    end 
     def initialize(hunger_level)
         @hunger_level = hunger_level
     end
@@ -10,9 +13,11 @@ class Animal
             return true
         end
     end
+    # this is the comment for the second commit
     def feed
         @hunger_level = 0
     end
+    # another comment made on the remote
     def bark
         return "woof!"
     end
